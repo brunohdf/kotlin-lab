@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kotlin-lab</string>
+    <string name="sample_string">first content</string>
 </resources>
