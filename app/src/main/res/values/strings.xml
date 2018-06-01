@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">kotlin-lab</string>
     <string name="sample_string">first content</string>
+    <string name="top_rated_movies">Top rated</string>
+    <string name="upcoming_movies">Upcoming</string>
+    <string name="now_playing_movies">Now playing</string>
+    <string name="my_favorites">My favorites</string>
 </resources>

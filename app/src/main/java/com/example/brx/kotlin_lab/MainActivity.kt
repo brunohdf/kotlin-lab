@@ -6,6 +6,7 @@ import com.example.brx.kotlin_lab.extension.replaceFragment
 import com.example.brx.kotlin_lab.model.repositoty.HomeRepository
 import com.example.brx.kotlin_lab.presenter.HomePresenter
 import com.example.brx.kotlin_lab.view.home.HomeFragment
+import com.example.brx.kotlin_lab.view.home.component.CustomBottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         // find a fragment inflated instance or create it if null
         val fragment = supportFragmentManager.findFragmentById(R.id.contentFrame) as HomeFragment?
                 ?: HomeFragment.newInstance().also { replaceFragment(it, R.id.contentFrame) }
+
+        val nav: CustomBottomNavigationView = findViewById(R.id.nav)
+        nav.selectedItemId = R.id.top_rated_tab
 
         presenter = HomePresenter(HomeRepository(), fragment)
     }
